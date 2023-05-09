@@ -1,4 +1,5 @@
 import React from 'react';
+import css from './ImageGalleryItem.module.css';
 
 // import { PropTypes } from 'prop-types';
 
@@ -10,8 +11,9 @@ export default function ImageGalleryItem({
 }) {
   return (
     <>
-      <li className="gallery-item">
+      <li className={css.ImageGalleryItem}>
         <img
+          className={css.ImageGalleryImg}
           onClick={() => onClick({ largeImageURL, tags })}
           src={webformatURL}
           alt={tags}

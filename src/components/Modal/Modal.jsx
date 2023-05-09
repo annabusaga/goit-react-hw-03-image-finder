@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import css from './Modal.module.css';
 
 // import { PropTypes } from 'prop-types';
 
@@ -26,8 +27,8 @@ class Modal extends Component {
     const { largeImageURL, tags } = this.props;
     return (
       <>
-        <div onClick={this.handlerClick} className="overlay">
-          <div className="modal">
+        <div onClick={this.handlerClick} className={css.overlay}>
+          <div className={css.modal}>
             <img src={largeImageURL} alt={tags} />
           </div>
         </div>

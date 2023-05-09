@@ -1,11 +1,12 @@
 import React from 'react';
+import css from './ImageGallery.module.css';
 
 // import { PropTypes } from 'prop-types';
 
 export default function ImageGallery({ children }) {
   return (
     <>
-      <ul className="gallery">{children}</ul>
+      <ul className={css.ImageGallery}>{children}</ul>
     </>
   );
 }

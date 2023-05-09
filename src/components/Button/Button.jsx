@@ -1,11 +1,14 @@
 import React from 'react';
+import css from './Button.module.css';
 
 // import { PropTypes } from 'prop-types';
 
-export default function Button({ children }) {
+export default function Button({ loadMoreClick }) {
   return (
     <>
-      <button>Load more</button>;
+      <button onClick={loadMoreClick} className={css.button}>
+        Load more
+      </button>
     </>
   );
 }
